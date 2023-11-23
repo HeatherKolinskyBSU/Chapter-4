@@ -7,7 +7,7 @@ int main() {    // Initialises the main function.
 	const char* alphabet[]{ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
 	// Creates an array storing the English alphabet as individual characters using 'const char*'.
 	// Surely there's a better way of storing this in plain code.
-	for (int j = 0; j < 26; j++) {
+	for (int j = 0; j < 25; j++) {
 		cout << alphabet[j] << endl;
 	}
 	// Using a 'for' loop to specify the amount of characters to be outputted,
@@ -34,6 +34,20 @@ int main() {    // Initialises the main function.
 	// by 1 each time until it reaches position 0.
 
 	cout << endl;
+
+
+	int averageArray[]{ 10, 15, 25, 35, 50, 75};
+	int i;
+	int sum = 0.0, average;
+	int num;
+
+	for (i = 0; i < 6; ++i){
+		cin >> num[i];
+		sum += num[i];
+	}
+
+	average = sum / 6;
+	cout << "Average = " << average;
 
 	return (0); // Returns function.
 }               // Ends the main function.
