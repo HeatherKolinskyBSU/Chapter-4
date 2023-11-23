@@ -11,10 +11,16 @@ int main() {    // Initialises the main function.
 	for (int j = 0; j < 26; j++) {
 		cout << alphabet[j] << endl;
 	}
-	// Using a 'for' loop to specify the amount of characters to be outputted (26),
+	// Using a 'for' loop to specify the amount of characters to be outputted,
 	// the program will output each of the characters on it's own seperate line.
 
 	cout << endl;
+
+	for (int j = 13; j < 26; j++) {
+		cout << alphabet[j] << endl;
+	}
+	// Pretty much the same as the previous 'for' loop - however now the
+	// code is only outputting the second half of the English alphabet.
 
 	return (0); // Returns function.
 }               // Ends the main function.
