@@ -35,19 +35,29 @@ int main() {    // Initialises the main function.
 
 	cout << endl;
 
+	//int averageArray[]{ 10, 15, 25, 35, 50, 75};
+	// Attempting later.
 
-	int averageArray[]{ 10, 15, 25, 35, 50, 75};
-	int i;
-	int sum = 0.0, average;
-	int num;
+	cout << endl;
 
-	for (i = 0; i < 6; ++i){
-		cin >> num[i];
-		sum += num[i];
-	}
-
-	average = sum / 6;
-	cout << "Average = " << average;
+	int arrayValues[] = { 10, 88, 4, 21, 345, 99, 17 };
+	int n = sizeof(arrayValues) / sizeof(arrayValues[0]);
+	// Declares the array and determines it's "size"
+	// (number of values present within the array)
+	cout << "Array: " << endl;
+	for (int i = 0; i < n; i++)
+		cout << arrayValues[i] << " ";
+	// Prints each value to the screen
+	// with a space between each one
+	
+	cout << endl;
+	cout << "Lowest Value  = "
+		 << *min_element(arrayValues, arrayValues + n) << endl;
+	     // Retrieves and prints the lowest value from the array
+	cout << "Highest Value = " 
+		 << *max_element(arrayValues, arrayValues + n) << endl;
+	     // Retrieves and prints the highest value from the array
+	cout << endl;
 
 	return (0); // Returns function.
-}               // Ends the main function.
+} // Ends the main function.
