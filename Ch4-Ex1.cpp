@@ -57,7 +57,25 @@ int main() {    // Initialises the main function.
 	cout << "Highest Value = " 
 		 << *max_element(arrayValues, arrayValues + n) << endl;
 	     // Retrieves and prints the highest value from the array
+	
 	cout << endl;
 
-	return (0); // Returns function.
+	int comicallyLargeArray[100];
+	int arrayValue = 0;
+	// Declares a very big and empty variable.
+	// Initialises the first value as '0'.
+	for (int i = 0; i < 100; i++) {
+		arrayValue++;
+		// Until the array hits it's container limit
+		// of 100, add 1 to the previous number.
+
+		if (i % 2 == 0) {
+			cout << arrayValue << " ";
+			// I can't explain why but the program wasn't pulling odd
+			// numbers from the program unless I checked for even
+			// numbers.
+		}
+	}
+	
+	return 0; // Returns function.
 } // Ends the main function.
