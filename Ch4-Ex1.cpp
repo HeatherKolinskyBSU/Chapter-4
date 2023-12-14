@@ -35,9 +35,25 @@ int main() {    // Initialises the main function.
 
 	cout << endl;
 
-	//int averageArray[]{ 10, 15, 25, 35, 50, 75};
-	// Attempting later.
+	int averageArray[]{ 10, 15, 25, 35, 50, 75};
+	int a = sizeof(averageArray) / sizeof(averageArray[0]);
+	// Declares the array and determines it's "size"
+	// (number of values present within the array)
+	cout << "Array: " << endl;
+	for (int i = 0; i < a; i++)
+		cout << averageArray[i] << " ";
+	// Prints each value to the screen
+	// with a space between each one
 
+	cout << endl;
+	cout << "Average - "
+		 << (10 + 15 + 25 + 35 + 50 + 75) / a << " " << endl;
+	         // Retrives an average by adding every value in the
+	         // array, then dividing by 'a' (quantity of values)
+
+	cout << endl;
+	
+	
 	cout << endl;
 
 	int arrayValues[] = { 10, 88, 4, 21, 345, 99, 17 };
@@ -72,8 +88,7 @@ int main() {    // Initialises the main function.
 		if (i % 2 == 0) {
 			cout << arrayValue << " ";
 			// I can't explain why but the program wasn't pulling odd
-			// numbers from the program unless I checked for even
-			// numbers.
+			// numbers from the program unless I checked for evens.
 		}
 	}
 	
